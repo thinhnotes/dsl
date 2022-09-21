@@ -70,5 +70,3 @@ RUN curl -fsSL https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh |
 # above, we are adding the lazy nvm init to .bashrc, because one is executed on interactive shells, the other for non-interactive shells (e.g. plugin-host) 
 COPY nvm-lazy.sh /root/.nvm/nvm-lazy.sh
 ENV PATH=$PATH:/root/.nvm/versions/node/v${NODE_VERSION}/bin
-weava logo
-Drop here!
