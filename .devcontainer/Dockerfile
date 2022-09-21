@@ -1,1 +1,1 @@
-FROM openjdk:11
+FROM gitpod/workspace-full
