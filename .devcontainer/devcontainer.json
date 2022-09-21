@@ -1,4 +1,10 @@
 {
+    "name": "Java",
+    "dockerFile": "Dockerfile",
+    // Set *default* container specific settings.json values on container create.
+    "settings": {
+        "java.home": "/docker-java-home"
+    },
     "customizations": {
         // Configure properties specific to VS Code.
         "vscode": {
@@ -10,5 +16,9 @@
             ]
         }
     },
+    "mounts": [
+        "source=extensions,target=/root/.vscode-server/extensions,type=volume",
+        "source=m2,target=/root/.m2,type=volume"
+    ],
     "postCreateCommand": "sudo apt install graphviz -y"
 }
