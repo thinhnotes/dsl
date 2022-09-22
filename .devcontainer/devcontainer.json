@@ -19,5 +19,5 @@
         "source=extensions,target=/root/.vscode-server/extensions,type=volume",
         "source=m2,target=/root/.m2,type=volume"
     ],
-    "postCreateCommand": "chmod +x /home/codespace/.vscode-remote/extensions/systemticks.c4-dsl-extension-3.1.7/server/c4-language-server/bin/c4-language-server"
+    "postCreateCommand": "sleep 30 && chmod +x /home/codespace/.vscode-remote/extensions/systemticks.c4-dsl-extension-3.1.7/server/c4-language-server/bin/c4-language-server"
 }
