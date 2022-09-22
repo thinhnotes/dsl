@@ -8,10 +8,14 @@
         // Configure properties specific to VS Code.
         "vscode": {
             // Add the IDs of extensions you want installed when the container is created.
+            "settings": {
+                "extensions.autoUpdate": "false",
+                "extensions.autoCheckUpdates": false,
+            },
             "extensions": [
                 "jebbs.plantuml",
                 "ciarant.vscode-structurizr",
-                "systemticks.c4-dsl-extension"
+                "systemticks.c4-dsl-extension@3.1.7"
             ]
         }
     },
